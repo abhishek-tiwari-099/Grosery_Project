@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px 10px 0px 10px;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+   
+}
+.body-container{
+    background-color: #46B8A1;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+     min-height: 100vh;
+     border-radius: 15px;
+    
+}
+.header h1{
+    font-size: clamp(15px,40px,45px);
+    font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  position: relative;
+color: black;  
+
+}
+
+.header h1:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+   
+    background-blend-mode: normal,color-burn;    
+    border-radius: 5px;
+    transform-origin: bottom top;
+    transition: transform 0.20s ease;
+  }
+  
+  .header h1:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+  }
+ 
+ .new-btn-con{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .custom-btn{
+    background-color: black;
+    color: white;
+    border: 1.5px solid white;
+    border-radius: 40px;
+    width: fit-content;
+    padding: 0px 10px 0px 10px;
+    font-size: 15px;
+    font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.1em;
+    height: 40px;
+
+ }
+ .custom-btn:hover{
+    background-color: rgb(228, 203, 10);
+    color: rgb(20, 5, 5);
+    transition: ease-in;
+    transition-duration: 0.5s ;
+    box-shadow: rgba(245, 214, 37, 0.944) -2px 2px 40px 5px;
+border: none;
+ }
+ .custom-btn i{
+  border-radius: 50%;
+ }
+  
+ @media only screen and (max-width: 320px) {
+    .header h1 {
+     font-size: 30px;
+    }
+    .custom-btn{
+        padding: 0px 5px 0px 5px;
+        font-size: 12px;
+        height: 30px;
+        align-items: center;
+
+
+    }
+  }
+  .input-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 30px;
+  }
+  .input-section input{
+    height: 40px;
+    border-radius: 20px;
+border: none;
+outline: 0px;
+margin-bottom: 20px;
+  }
+  .delete-btn{
+    background-color: white;
+    color: black;
+    height: 40px;
+    font-weight: 600;
+    border-radius: 20px;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 20px;
+
+  }
+  .delete-btn:hover{
+    background-color: rgb(239, 44, 44);
+    color: white;
+    border: none;   
+     transition: ease-in-out;
+     box-shadow: rgba(236, 13, 50, 0.944) -2px 2px 40px 5px;
+
+    transition-duration: .5s;
+  }
+
+  #item-table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid white;
+    padding: 50px;
+    overflow-x: scroll;
+  }
+  #item-table tr{
+    padding: 20px;
+  }
+  table, th, td {
+    border: 1px solid black;
+  }
+.dt-button{
+  width: 3.5em;
+  border-radius: 8px;
+  font-weight: 600;
+
+}
+.dt-button:hover{
+  transition-duration: 0.5s ;
+    box-shadow: rgba(245, 214, 37, 0.944) -2px 2px 40px 5px;
+border: none;
+}
+  #dt-search-0{
+    width: 8em;
+    padding: 0;
+    margin: 0;
+   
+  
+  }
+  .dt-search{
+    display: flex;
+    justify-content: right;
+  }
+ 
